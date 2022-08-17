@@ -45,3 +45,7 @@
     <p><code>service elasticsearch start</code></p>
 </div>
 <hr/>
+<h3><b>7. Mapping</b></h3>
+<div>
+    <p><code></code></p>
+</div>
