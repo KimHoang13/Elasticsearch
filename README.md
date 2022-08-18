@@ -13,7 +13,7 @@
 <h3><b>3. Create and add Elasticsearch repository for yum / dnf:</b></h3>
 <div>
     <p><code>tee /etc/yum.repos.d/elasticsearch.repo && EOF</code></p>
-    <p><code>Repo.txt</code></p>
+    <p><i>Repo.txt</i></p>
     <p><code>EOF</code></p>
 </div>
 <hr/>
