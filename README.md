@@ -13,14 +13,7 @@
 <h3><b>3. Create and add Elasticsearch repository for yum / dnf:</b></h3>
 <div>
     <p><code>tee /etc/yum.repos.d/elasticsearch.repo && EOF</code></p>
-    <p><code>[elasticsearch-7.x]<br/>
-        name=Elasticsearch repository for 7.x packages<br/>
-        baseurl=https://artifacts.elastic.co/packages/7.x/yum<br/>
-        gpgcheck=1<br/>
-        gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch<br/>
-        enabled=1<br/>
-        autorefresh=1<br/>
-        type=rpm-md</code></p>
+    <p><code>Repo.txt</code></p>
     <p><code>EOF</code></p>
 </div>
 <hr/>
@@ -47,5 +40,19 @@
 <hr/>
 <h3><b>7. Mapping</b></h3>
 <div>
-    <p><code></code></p>
+    <p><i>Mapping.txt</i></p>
 </div>
+<hr/>
+<h3><b>8. Start</b></h3>
+<div>
+    <p><code>service elasticsearch start</code></p>
+</div>
+<hr/>
+<h3><b>9. Check</b></h3>
+<div>
+    <p><i>browser : localhost:9200</i></p>
+    <p><code>service elasticsearch status</code></p>
+    <p><code>curl -X GET "localhost:9200/?pretty"</code></p>
+    <p><code>curl 'localhost:9200/_cat/indices?v' --user ':'</code></p>
+</div>
+<hr/>
